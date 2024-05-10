@@ -1,0 +1,368 @@
+ 
+body {
+  background-color: #111;
+}
+
+
+
+h1 {
+  margin-left: 25px;
+  margin-top: 135px;
+  width: 32ch;
+  animation: typing 2s steps(32), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 4.5em;
+  color: white
+
+}
+h2{
+margin-left: 25px;
+font-size: 4.5em;
+ color: white;
+ font-family: monospace;
+
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+.glow{
+
+color: #eee;
+text-shadow: 
+0 0 7px #eee,
+0 0 1.5px #eee,
+0 0 3px #eee;
+
+}
+.M{
+  color: #39FF14;
+text-shadow: 
+0 0 5px #39FF14,
+0 0 1px #39FF14,
+0 0 2px #39FF14,
+0 0 4px #39FF14;
+}
+.intro {
+  height:100%;
+}
+#projects{
+  height:100%;
+}
+   
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-left: 45%;
+  margin-top:15px;
+  z-index: 1;
+}
+
+/* pill navbar design by Percy Wang */
+.nav-pill-wrapper {
+  flex-direction: column;
+  justify-content: center;
+  width: 180px;
+  height: 56px;
+  display: flex;
+  position: relative;
+}
+
+
+
+.nav-pill {
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  background-color: rgba(242, 242, 242, .05);
+  border: 1px solid rgba(242, 242, 242, .1);
+  border-radius: 24px;
+  justify-content: space-between;
+  align-items: center;
+  width: 180px;
+  height: 48px;
+  padding-left: 6px;
+  padding-right: 6px;
+  transition: box-shadow 1s cubic-bezier(.23, 1, .32, 1), border .6s cubic-bezier(.165, .84, .44, 1);
+  display: flex;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, .15);
+}
+
+.nav-pill:hover {
+  background-color: rgba(242, 242, 242, .08);
+  border-color: rgba(242, 242, 242, .2);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, .3);
+}
+
+
+
+
+
+.nav-toggle {
+  color: var(--on-background);
+  text-align: center;
+  border-radius: 18px;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 36px;
+  text-decoration: none;
+  transition: all .2s cubic-bezier(.165, .84, .44, 1);
+  display: flex;
+}
+
+.nav-toggle:hover {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(242, 242, 242, .05));
+}
+
+.nav-toggle.work:hover {
+  background-image: linear-gradient(270deg, rgba(0, 0, 0, 0), rgba(242, 242, 242, .05));
+}
+
+.text-nav-toggle {
+  color: white;
+  text-align: center;
+  letter-spacing: .2px;
+  font-family: Neue Montreal, sans-serif;
+  font-weight: 740;
+  line-height: 18px;
+}
+
+
+a{
+      text-decoration: none;
+}
+
+a { color: inherit; }
+
+
+
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+
+.btn-color-1,
+.btn-color-2 {
+  border: black(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+  background: rgb(53, 53, 53);
+  color: white;
+}
+
+.btn-color-1:hover {
+  background: rgb(0, 0, 0);
+}
+
+.btn-color-2 {
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  background-color: rgba(0, 0, 0, .05);
+}
+
+.btn-color-2:hover {
+  border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+.btn-container {
+  gap: 1rem;
+}
+
+#projects {
+  position: relative;
+  margin-right: 50 ;
+  margin-left: 50
+}
+
+/* project cards inpired by @howtobecomeadeveloper
+ */
+
+.project-img {
+  opacity:1;
+  border-radius: 2rem;
+  width: 90%;
+  height: 80%;
+}
+
+.project-tile {
+  margin: 1rem;
+  color: black;
+}
+
+.project-btn {
+  color: white;
+  border-color: rgb(163, 163, 163);
+}
+.experience-sub-title {
+  color: white;
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+  font-family: monospace;
+}
+
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+
+
+.about-containers {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  background-color: #1b1c1f;
+  transition: box-shadow 1s cubic-bezier(.23, 1, .32, 1), border .6s cubic-bezier(.165, .84, .44, 1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, .15);
+border-radius: 2rem;
+  text-align: center;
+  border: 1px solid rgba(242, 242, 242, .1);
+}
+
+
+
+
+.bh {
+  margin-left: 25px;
+  margin-top: 135px;
+  width: 19ch;
+  animation: typing 2s steps(19), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 4.5em;
+  color: white
+
+}
+#contact{
+margin-bottom:200px
+}
+html {
+  scroll-behavior: smooth;
+}
+
+ @media screen and (max-width: 1100px) {
+  
+  .about-containers {
+    flex-wrap: wrap;
+  }
+  #contact,
+  #projects {
+    height: fit-content;
+  }
+    h1, .bh {
+  margin-left: 25px;
+  margin-top: 180px;
+  border-right: 3px solid;
+  
+  font-size: 2.8em;
+}
+.bh {
+  font-size: 4em;
+}
+.glow{
+
+color: #eee;
+text-shadow: 
+0 0 4px #eee,
+0 0 1.5px #eee,
+0 0 2px #eee;
+
+}
+.M{
+  color: #39FF14;
+text-shadow: 
+0 0 4px #39FF14,
+0 0 1.5px #39FF14,
+0 0 2px #39FF14,
+0 0 3.5px #39FF14;
+}
+}
+
+
+
+@media screen and (max-width: 670px) {
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+
+
+  h1, .bh {
+  margin-left: 15px;
+  margin-top: 200px;
+  border-right: 3px solid;
+  
+  font-size: 2em;
+}
+.bh {
+  font-size: 3em;
+}
+.glow{
+
+color: #eee;
+text-shadow: 
+0 0 2.5px #eee,
+0 0 0.5px #eee,
+0 0 1px #eee;
+
+}
+.M{
+  color: #39FF14;
+text-shadow: 
+0 0 2.5px #39FF14,
+0 0 0.5px #39FF14,
+0 0 1px #39FF14,
+0 0 2px #39FF14;
+}
+
+}
