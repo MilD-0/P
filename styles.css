@@ -336,7 +336,9 @@ text-shadow:
     font-size: 1.25rem;
   }
 
-
+.nav{
+  display: none;
+}
   h1, .bh {
   margin-left: 15px;
   margin-top: 200px;
