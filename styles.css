@@ -341,11 +341,12 @@ text-shadow:
   margin-left: 15px;
   margin-top: 200px;
   border-right: 3px solid;
+   white-space:pre-wrap;
   
-  font-size: 2em;
+  font-size: 1.8em;
 }
 .bh {
-  font-size: 3em;
+  font-size: 2em;
 }
 .glow{
 
