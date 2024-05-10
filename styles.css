@@ -332,6 +332,9 @@ text-shadow:
 
 
 @media screen and (max-width: 670px) {
+ body{
+    max-width:650px;
+  }
   .experience-sub-title {
     font-size: 1.25rem;
   }
