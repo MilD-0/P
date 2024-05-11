@@ -256,7 +256,7 @@ a { color: inherit; }
 }
 
 .details-container {
-  padding: 1.5rem;
+  padding: 2rem;
   flex: 1;
   -webkit-backdrop-filter: blur(15px);
   backdrop-filter: blur(15px);
@@ -280,7 +280,7 @@ border-radius: 2rem;
   overflow: hidden;
   border-right: 3px solid;
   font-family: monospace;
-  font-size: 4.5em;
+  font-size: 3.5em;
   color: white
 
 }
@@ -308,7 +308,7 @@ html {
   font-size: 2.8em;
 }
 .bh {
-  font-size: 4em;
+  font-size: 3em;
 }
 .glow{
 
@@ -327,14 +327,17 @@ text-shadow:
 0 0 2px #39FF14,
 0 0 3.5px #39FF14;
 }
+.nav {
+  margin-left: 40%;
+ 
+}
+.details-container {
+  padding: 5rem;
 }
 
 
 
 @media screen and (max-width: 670px) {
- body{
-    max-width:650px;
-  }
   .experience-sub-title {
     font-size: 1.25rem;
   }
@@ -346,12 +349,12 @@ text-shadow:
   margin-left: 15px;
   margin-top: 200px;
   border-right: 3px solid;
-   white-space:pre-wrap;
+  white-space: pre-wrap;
   
   font-size: 1.8em;
 }
 .bh {
-  font-size: 2em;
+  font-size: 1.8em;
 }
 .glow{
 
